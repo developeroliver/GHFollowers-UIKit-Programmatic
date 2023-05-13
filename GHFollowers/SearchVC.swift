@@ -18,7 +18,7 @@ class SearchVC: UIViewController {
     // MARK: - LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemBlue
         
         configure()
     }
