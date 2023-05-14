@@ -15,19 +15,18 @@ class FavoritesListVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .systemBackground
+    configure()
     
     self.navigationItem.title = "Favorites"
     self.navigationController?.navigationBar.prefersLargeTitles = true
     self.navigationItem.largeTitleDisplayMode = .always
-    
-    configureUI()
   }
   
   
   // MARK: - HELPERS
   
   // MARK: - FUNCTIONS
-  func configureUI() {
+  func configure() {
     
   }
 

@@ -23,7 +23,6 @@ class SearchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        
         configure()
     }
     
@@ -36,9 +35,10 @@ class SearchVC: UIViewController {
     // MARK: - HELPERS
     @objc func pushFollowerListVC() {
         guard isUsernameEntered else {
-            print("No Username")
+            presentGFAlertOnMainThread(alertTitle: "Empty Username", message: "Please enter a username. We need to know who to look for 😃.", buttonTitle: "Ok")
             return
         }
+        
         
         let followerListVC      = FollowerListVC()
         followerListVC.username = usernameTextField.text
