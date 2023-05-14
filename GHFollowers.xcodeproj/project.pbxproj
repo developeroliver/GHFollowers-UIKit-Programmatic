@@ -16,7 +16,8 @@
 		375EF8852A0EB41300756F1D /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375EF8842A0EB41300756F1D /* GFButton.swift */; };
 		375EF8872A0EB67B00756F1D /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375EF8862A0EB67B00756F1D /* GFTextField.swift */; };
 		3782DEF52A101C99001DC797 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782DEF42A101C99001DC797 /* FollowerListVC.swift */; };
-		37C7A0592A10C0A400D9AAB3 /* Simulator Screenshot - iPhone 14 Pro - 2023-05-14 at 09.02.38.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C7A0582A10C0A400D9AAB3 /* Simulator Screenshot - iPhone 14 Pro - 2023-05-14 at 09.02.38.png */; };
+		37C7A0592A10C0A400D9AAB3 /* SearchVC light.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C7A0582A10C0A400D9AAB3 /* SearchVC light.png */; };
+		37C7A05B2A10C0D500D9AAB3 /* SearchVC dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C7A05A2A10C0D500D9AAB3 /* SearchVC dark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,8 @@
 		375EF8842A0EB41300756F1D /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		375EF8862A0EB67B00756F1D /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		3782DEF42A101C99001DC797 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
-		37C7A0582A10C0A400D9AAB3 /* Simulator Screenshot - iPhone 14 Pro - 2023-05-14 at 09.02.38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screenshot - iPhone 14 Pro - 2023-05-14 at 09.02.38.png"; path = "../../../../Desktop/Simulator Screenshot - iPhone 14 Pro - 2023-05-14 at 09.02.38.png"; sourceTree = "<group>"; };
+		37C7A0582A10C0A400D9AAB3 /* SearchVC light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SearchVC light.png"; path = "../../../../Desktop/SearchVC light.png"; sourceTree = "<group>"; };
+		37C7A05A2A10C0D500D9AAB3 /* SearchVC dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SearchVC dark.png"; path = "../../../../Desktop/SearchVC dark.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,8 @@
 		37C7A0572A10C09500D9AAB3 /* Project Images */ = {
 			isa = PBXGroup;
 			children = (
-				37C7A0582A10C0A400D9AAB3 /* Simulator Screenshot - iPhone 14 Pro - 2023-05-14 at 09.02.38.png */,
+				37C7A0582A10C0A400D9AAB3 /* SearchVC light.png */,
+				37C7A05A2A10C0D500D9AAB3 /* SearchVC dark.png */,
 			);
 			path = "Project Images";
 			sourceTree = "<group>";
@@ -146,8 +149,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C7A05B2A10C0D500D9AAB3 /* SearchVC dark.png in Resources */,
 				375EF8792A0EAEF700756F1D /* LaunchScreen.storyboard in Resources */,
-				37C7A0592A10C0A400D9AAB3 /* Simulator Screenshot - iPhone 14 Pro - 2023-05-14 at 09.02.38.png in Resources */,
+				37C7A0592A10C0A400D9AAB3 /* SearchVC light.png in Resources */,
 				375EF8762A0EAEF700756F1D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
