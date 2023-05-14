@@ -15,6 +15,7 @@
 		375EF8832A0EB08800756F1D /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375EF8822A0EB08800756F1D /* FavoritesListVC.swift */; };
 		375EF8852A0EB41300756F1D /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375EF8842A0EB41300756F1D /* GFButton.swift */; };
 		375EF8872A0EB67B00756F1D /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375EF8862A0EB67B00756F1D /* GFTextField.swift */; };
+		3782DEF52A101C99001DC797 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782DEF42A101C99001DC797 /* FollowerListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		375EF8822A0EB08800756F1D /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		375EF8842A0EB41300756F1D /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		375EF8862A0EB67B00756F1D /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		3782DEF42A101C99001DC797 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				375EF8822A0EB08800756F1D /* FavoritesListVC.swift */,
 				375EF8842A0EB41300756F1D /* GFButton.swift */,
 				375EF8862A0EB67B00756F1D /* GFTextField.swift */,
+				3782DEF42A101C99001DC797 /* FollowerListVC.swift */,
 				375EF8752A0EAEF700756F1D /* Assets.xcassets */,
 				375EF8772A0EAEF700756F1D /* LaunchScreen.storyboard */,
 				375EF87A2A0EAEF700756F1D /* Info.plist */,
@@ -105,6 +108,7 @@
 				TargetAttributes = {
 					375EF8682A0EAEF600756F1D = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -147,6 +151,7 @@
 				375EF8832A0EB08800756F1D /* FavoritesListVC.swift in Sources */,
 				375EF8852A0EB41300756F1D /* GFButton.swift in Sources */,
 				375EF8812A0EB05300756F1D /* SearchVC.swift in Sources */,
+				3782DEF52A101C99001DC797 /* FollowerListVC.swift in Sources */,
 				375EF86D2A0EAEF600756F1D /* AppDelegate.swift in Sources */,
 				375EF86F2A0EAEF600756F1D /* SceneDelegate.swift in Sources */,
 			);
@@ -285,6 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R5L72AD597;
@@ -302,6 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oliviergeiger.GHFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R5L72AD597;

@@ -14,11 +14,15 @@ class SearchVC: UIViewController {
     let usernameTextField   = GFTextField()
     let callToActionButton  = GFButton(backgroundColor: .systemGreen, title: "Get Follower")
     
+    var isUsernameEntered: Bool {
+        return !usernameTextField.text!.isEmpty
+    }
+    
     var textLogo = "gh-logo"
     // MARK: - LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .systemBackground
         
         configure()
     }
@@ -30,12 +34,31 @@ class SearchVC: UIViewController {
     
     
     // MARK: - HELPERS
+    @objc func pushFollowerListVC() {
+        guard isUsernameEntered else {
+            print("No Username")
+            return
+        }
+        
+        let followerListVC      = FollowerListVC()
+        followerListVC.username = usernameTextField.text
+        followerListVC.title    = usernameTextField.text
+        navigationController?.pushViewController(followerListVC, animated: true)
+    }
+    
     
     // MARK: - FUNCTIONS
     func configure() {
         configureLogoImageView()
         configureTextField()
         configureCallToActionButton()
+        createDismissKeyboadTapGesture()
+    }
+    
+    
+    func createDismissKeyboadTapGesture() {
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
     }
     
     
@@ -55,6 +78,7 @@ class SearchVC: UIViewController {
     
     func configureTextField() {
         view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
         
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -67,6 +91,7 @@ class SearchVC: UIViewController {
     
     func configureCallToActionButton() {
         view.addSubview(callToActionButton)
+        callToActionButton.addTarget(self, action: #selector(pushFollowerListVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
@@ -77,3 +102,11 @@ class SearchVC: UIViewController {
     }
 }
 
+// MARK: EXTENSION
+extension SearchVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("Did tap return")
+        
+        return true
+    }
+}
